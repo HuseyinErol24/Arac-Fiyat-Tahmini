@@ -1,0 +1,42 @@
+body{
+    background-image: url("araba.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color:  red;
+    background-size: cover; 
+
+ 
+}
+#loginyazisi{
+    font-size: x-large;
+    color: black;
+    margin-left: 3%;
+    opacity: 0.8;
+    
+}
+#tablo{
+    backdrop-filter: blur(2px);
+    width: 700px;
+    height: 540px;
+    margin: auto;
+    margin-top: 10%;
+    border-style: solid;
+    border-radius: 45px;
+    border-color: bisque;
+    
+}
+form{
+    margin: auto;
+    margin-left: 25%;
+    width: 15%;
+
+}
+input{ 
+ width: 240px;
+ height: 25px;
+ opacity: 1;
+}
+#girisbuton{
+    opacity: 1;
+}
+

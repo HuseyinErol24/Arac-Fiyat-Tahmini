@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hüseyin Erol Fiyat tahmin modeli</title>
+    <link rel="stylesheet" href="static/araba.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="arkaplan">
+        <div id="tablo">
+            <div id="loginyazisi">
+                <h1>Model Fiyat Tahmini</h1>
+            </div>
+            <form action="/" method="POST" id="formlar" name="kayit">
+                <input type="text" name="Yıl" id="Yıl" placeholder="Yıl" >
+                <br><br>
+                <input type="text" name="Şanzıman" id="Şanzıman" placeholder="Şanzıman" >
+                <br><br>
+                <input type="text" name="Kilometre" id="Kilometre" placeholder="Kilometre" >
+                <br><br>
+                <input type="text" name="Vergi" id="Vergi" placeholder="Vergi" >
+                <br><br>
+                <input type="text" name="Mil Başına Galon" id="Mil Başına Galon" placeholder="Mil Başına Galon" >
+                <br><br>
+                <input type="text" name="Motor Hacmi" id="Motor Hacmi" placeholder="Motor Hacmi" >
+                <br><br>
+                <input type="submit" name="Tahmin et" id="Tahmin et" value="Tahmin et" style="border-radius: 25px;">
+                <div style="background-color: white;width:240px">
+                    {% if tahmin %}
+                    <div id="sonuc">
+                        <h3>Tahmin Edilen Fiyat : </h3><h1 style="color:red">{{ tahmin }}</h1>  
+                    </div>
+                    {% endif %}
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
